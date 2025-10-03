@@ -1,0 +1,46 @@
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports
+target/
+*.html
+
+# Installers
+*.msi
+*.exe
+*.zip
+
+# Node modules
+node_modules/
+package-lock.json
+
+# ChromeDriver
+chromedriver*.exe
+chromedriver*.zip
+
+# Serenity
+target/site/serenity/
+build/reports/

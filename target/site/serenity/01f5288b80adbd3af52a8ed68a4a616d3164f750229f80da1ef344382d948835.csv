@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"JQuery Datepicker - Escenario 1","Reserva de una cita seleccionando una fecha en el calendario","SUCCESS","2025-10-03T13:05:12.0212205-05:00[America/Bogota]","0.0","3.58"
-"JQuery Datepicker - Escenario 2","Selección de una fecha específica en un mes diferente","SUCCESS","2025-10-03T13:05:15.8596509-05:00[America/Bogota]","0.0","3.78"
-"JQuery Datepicker - Escenario 3","Validación de campo bloqueado","SUCCESS","2025-10-03T13:05:19.9253332-05:00[America/Bogota]","0.0","4.6"
