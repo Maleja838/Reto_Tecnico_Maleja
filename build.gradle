@@ -5,14 +5,12 @@ apply plugin: 'net.serenity-bdd.aggregator'
 repositories {
     mavenLocal()
     mavenCentral()
-    jcenter()
 }
 
 buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
-        jcenter()
     }
     dependencies {
 
@@ -26,20 +24,33 @@ dependencies {
     implementation 'net.serenity-bdd:serenity-junit:2.0.80'
     implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
     implementation 'net.serenity-bdd:serenity-core:2.0.80'
-    implementation 'org.slf4j:slf4j-simple:1.7.7'
-    implementation 'com.google.guava:guava:23.0'
-    implementation group: 'org.apache.poi', name: 'poi', version: '3.17'
-    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
-
-
-
-
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.2.3'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.3'
+    
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'net.serenity-bdd:serenity-core:2.0.80'
+    testImplementation 'net.serenity-bdd:serenity-junit:2.0.80'
+    testImplementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
 }
 
 
 test {
-
     ignoreFailures = true
+    useJUnit()
+}
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ['test/java']
+        }
+        resources {
+            srcDirs = ['test/resources']
+        }
+    }
 }
 
 

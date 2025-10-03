@@ -7,9 +7,10 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions( features = "src/test/resources/features/test.feature",
+@CucumberOptions( features = "classpath:features",
         glue = "co.sqasa.StepDef",
-        snippets = SnippetType.CAMELCASE
+        snippets = SnippetType.CAMELCASE,
+        tags = "@datepicker"
 )
 public class testRunner {
 }
